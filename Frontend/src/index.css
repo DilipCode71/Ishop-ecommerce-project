@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Add in global styles or styled JSX */
+.swal2-html-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  .swal2-html-container::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    border-radius: 8px;
+  }
+
+
+  .slick-slide:focus {
+  /* outline: none !important; */
+    outline: thin dotted;
+  border: none !important;
+}
+
+
+.slick-slide img:focus {
+  outline: none !important;
+  border: none !important;
+}
+  
+
+.slick-dots {
+  bottom: -25px !important;
+  position: relative !important;
+  margin-top: 0px;
+}
+
+
+/* ::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+} */

@@ -1,0 +1,30 @@
+# Node modules (heavy, unnecessary)
+node_modules/
+
+# Build output (local build results)
+dist/
+build/
+
+# Environment variables (sensitive info)
+.env
+.env.local
+.env.development
+.env.production
+
+# System/OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code settings (if you don't want to share them)
+.vscode/
+
+# Mac-specific files
+*.DS_Store
+
+# Optional: If you're using coverage tools (like Jest)
+coverage/
