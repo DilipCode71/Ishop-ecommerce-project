@@ -30,8 +30,8 @@ app.use(
   })
 );
 
-app.use(express.static("Public"));
 
+app.use("/images", express.static("Public/images"));
 app.use("/category", CategoryRouter);
 app.use("/color", ColorRouter);
 app.use("/product", ProductRouter);
