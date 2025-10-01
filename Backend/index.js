@@ -15,7 +15,7 @@ const app = express();
 
 app.use(express.json());
 
-const allowedOrigins = ["http://localhost:5153", "http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5153", "http://localhost:5173", "https://ishop-frontend-one.vercel.app"];
 app.use(
   cors({
     origin: function (origin, callback) {
