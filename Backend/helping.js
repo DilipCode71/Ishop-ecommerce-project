@@ -25,7 +25,7 @@ const decryptPassword=(value)=>{
 
 
 const accessToken=(data)=>{ return jwt.sign(data,process.env.SECRET_KEY)  } 
-// new token  created
+// new token  created 
 
 
 const verifyToken = (token) => {
