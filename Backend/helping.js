@@ -3,8 +3,6 @@ const jwt = require("jsonwebtoken");
 const Cryptr = require('cryptr');
 const cryptr = new Cryptr(process.env.SECRET_KEY);
 
-
-
 const generateCategoryImageName=(imageName)=>{
     return Math.floor(Math.random()*1000)+ new Date().getTime()+imageName
 }
@@ -16,17 +14,12 @@ const encryptPassword=(value)=>{
 }
 
 
-
 const decryptPassword=(value)=>{
     return cryptr.decrypt(value)
 }
 
-
-
-
-const accessToken=(data)=>{ return jwt.sign(data,process.env.SECRET_KEY)  } 
 // new token  created 
-
+const accessToken=(data)=>{ return jwt.sign(data,process.env.SECRET_KEY)  } 
 
 const verifyToken = (token) => {
     try {
