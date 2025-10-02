@@ -29,7 +29,6 @@ app.use(
     // credentials: true,
   })
 );
-// app.use("/images", express.static("Public/images"));
 app.use("/images", express.static("Public/Images"));
 app.use("/category", CategoryRouter);
 app.use("/color", ColorRouter);
